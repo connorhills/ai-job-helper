@@ -1,0 +1,105 @@
+<svg width="1880" height="1866" viewBox="0 0 1880 1866" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <!-- Dark background gradient -->
+    <linearGradient id="paint0_linear" x1="0" y1="0" x2="1880" y2="1866" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#23272F"/>
+      <stop offset="1" stop-color="#181A20"/>
+    </linearGradient>
+    <!-- Vibrant gradients for blocks/highlights -->
+    <linearGradient id="paint1_linear" x1="1246.83" y1="297" x2="1781.94" y2="624.655" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#8F5CFF" stop-opacity="0.15"/>
+      <stop offset="0.7" stop-color="#00F0FF" stop-opacity="0.7"/>
+      <stop offset="1" stop-color="#5EFCD6" stop-opacity="0.5"/>
+    </linearGradient>
+    <linearGradient id="paint2_linear" x1="349.436" y1="-200" x2="583.548" y2="568.872" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#5EFCD6" stop-opacity="0.95"/>
+      <stop offset="0.7" stop-color="#38B6FF" stop-opacity="0.15"/>
+      <stop offset="1" stop-color="#A7C7E7" stop-opacity="0.5"/>
+    </linearGradient>
+    <!-- Gradients for lines -->
+    <linearGradient id="paint3_linear" x1="121" y1="937" x2="121" y2="1046" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#00F0FF"/>
+      <stop offset="1" stop-color="#8F5CFF"/>
+    </linearGradient>
+    <linearGradient id="paint4_linear" x1="142" y1="1133" x2="142" y2="1209" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#FF5CA7"/>
+      <stop offset="1" stop-color="#5EFCD6"/>
+    </linearGradient>
+    <linearGradient id="paint5_linear" x1="50" y1="857" x2="50" y2="942" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#38B6FF"/>
+      <stop offset="1" stop-color="#00F0FF"/>
+    </linearGradient>
+    <linearGradient id="paint6_linear" x1="209" y1="1014" x2="209" y2="1086" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#5EFCD6"/>
+      <stop offset="1" stop-color="#FF5CA7"/>
+    </linearGradient>
+    <linearGradient id="paint7_linear" x1="184" y1="894" x2="184" y2="966" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#8F5CFF"/>
+      <stop offset="1" stop-color="#00F0FF"/>
+    </linearGradient>
+    <linearGradient id="paint8_linear" x1="78" y1="1069" x2="78" y2="1122" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#FF5CA7"/>
+      <stop offset="1" stop-color="#5EFCD6"/>
+    </linearGradient>
+    <linearGradient id="paint9_linear" x1="175" y1="1096" x2="175" y2="1140" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#8F5CFF"/>
+      <stop offset="1" stop-color="#00F0FF"/>
+    </linearGradient>
+    <!-- More gradients for extra lines -->
+    <linearGradient id="paint10_linear" x1="400" y1="200" x2="400" y2="300" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#5EFCD6"/>
+      <stop offset="1" stop-color="#FF5CA7"/>
+    </linearGradient>
+    <linearGradient id="paint11_linear" x1="800" y1="1500" x2="800" y2="1600" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#00F0FF"/>
+      <stop offset="1" stop-color="#8F5CFF"/>
+    </linearGradient>
+    <linearGradient id="paint12_linear" x1="1600" y1="400" x2="1600" y2="500" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#FF5CA7"/>
+      <stop offset="1" stop-color="#5EFCD6"/>
+    </linearGradient>
+    <linearGradient id="paint13_linear" x1="1200" y1="1000" x2="1200" y2="1100" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#8F5CFF"/>
+      <stop offset="1" stop-color="#00F0FF"/>
+    </linearGradient>
+    <linearGradient id="paint14_linear" x1="600" y1="600" x2="600" y2="700" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#FF5CA7"/>
+      <stop offset="1" stop-color="#5EFCD6"/>
+    </linearGradient>
+    <!-- Filters with larger regions to prevent cut-off -->
+    <filter id="filter0_f" rx="1200" ry="-400" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+      <feGaussianBlur stdDeviation="100"/>
+    </filter>
+    <filter id="filter1_f" rx="-700" ry="100" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+      <feGaussianBlur stdDeviation="100"/>
+    </filter>
+    <clipPath id="clip0">
+      <rect width="1880" height="1866" fill="white"/>
+    </clipPath>
+  </defs>
+  <g clip-path="url(#clip0)">
+    <!-- Dark background with square corners -->
+    <rect width="1880" height="1866" fill="url(#paint0_linear)"/>
+    <!-- Glows/ellipses with larger filter regions -->
+    <g opacity="0.5" filter="url(#filter0_f)">
+      <ellipse cx="1700" cy="300" rx="384.5" ry="476.5" fill="#8F5CFF"/>
+    </g>
+    <g opacity="0.5" filter="url(#filter1_f)">
+      <ellipse cx="100" cy="900" rx="357" ry="438.5" fill="#00F0FF"/>
+    </g>
+    <!-- Colorful blocks -->
+    <rect x="846.83" y="1097" width="234.11" height="527.655" transform="rotate(-30 1546.83 297)" fill="url(#paint1_linear)"/>
+    <rect x="349.436" y="-10" width="234.112" height="578.872" transform="rotate(30 349.436 -10)" fill="url(#paint2_linear)"/>
+    <!-- Extra lines for more visual interest -->
+    <path d="M100 100V200" stroke="url(#paint10_linear)" stroke-width="4"/>
+    <path d="M800 1500V1600" stroke="url(#paint11_linear)" stroke-width="4"/>
+    <path d="M1400 200V100" stroke="url(#paint6_linear)" stroke-width="4"/>
+    <path d="M1200 1000V1100" stroke="url(#paint13_linear)" stroke-width="4"/>
+    <path d="M600 600V700" stroke="url(#paint7_linear)" stroke-width="4"/>
+    <path d="M1700 1200V1300" stroke="url(#paint3_linear)" stroke-width="4"/>
+    <path d="M300 1600V1700" stroke="url(#paint4_linear)" stroke-width="4"/>
+    <path d="M1000 400V500" stroke="url(#paint5_linear)" stroke-width="4"/>
+    <path d="M1500 1700V1800" stroke="url(#paint5_linear)" stroke-width="4"/>
+    <path d="M500 1200V1300" stroke="url(#paint7_linear)" stroke-width="4"/>
+  </g>
+</svg>
