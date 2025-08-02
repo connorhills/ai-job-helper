@@ -57,7 +57,7 @@ form {
   }
 
   .gradient-border {
-    @apply bg-gradient-to-b from-light-blue-100 to-light-blue-200 p-4 rounded-2xl;
+    @apply bg-gradient-to-b from-[#0051ff] to-[#03ffc0] p-2 rounded-2xl;
   }
 
   .primary-button {
