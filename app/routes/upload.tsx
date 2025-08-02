@@ -73,6 +73,7 @@ const Upload = () => {
         await kv.set(`resume:${uuid}`, JSON.stringify(data));
         setStatusText('Analysis complete, redirecting...');
         console.log(data);
+        navigate(`/feedback/${uuid}`);
     }
 
     const handleSubmit = (e: FormEvent<HTMLFormElement>) => {
@@ -99,11 +100,11 @@ const Upload = () => {
                     <h1 className="text-gradient">Smart feedback for your dream job</h1>
                     {isProcessing ? (
                         <>
-                            <h2>{statusText}</h2>
+                            <h2 className="text-[#e7fff7]">{statusText}</h2>
                             <img src="/images/resume-scan.gif" className="w-full" />
                         </>
                     ) : (
-                        <h2>Upload your resume to receive an <span className="font-bold">accurate</span> ATS score with tips for improvement</h2>
+                        <h2 className="text-[#e7fff7]">Upload your resume to receive an <span className="font-bold">accurate</span> ATS score with tips for improvement</h2>
                     )}
                     {!isProcessing && (
                         <form id="upload-form" onSubmit={handleSubmit} className="flex flex-col gap-4 mt-8">

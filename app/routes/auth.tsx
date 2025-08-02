@@ -22,7 +22,7 @@ const auth = () => {
                 <section className="flex flex-col items-center gap-8 bg-[#1a2122c7] rounded-2xl p-10">
                     <div>
                         <h1 className="text-gradient">Welcome</h1>
-                        <h2>Log in to continue your job hunting journey, effectively!</h2>
+                        <h2 className="text-[#e7fff7]">Log in to continue your job hunting journey, effectively!</h2>
                     </div>
                     <div>
                         {isLoading ? (

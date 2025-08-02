@@ -26,7 +26,7 @@ export default function Home() {
     <section className="main-section">
       <div className="page-heading py-16">
         <h1 className="text-gradient">Track Your Application & Resume Ratings</h1>
-        <h2>Review your resumes receiving reliable AI-powered feedback!</h2>
+        <h2 className="text-[#e7fff7]">Review your resumes receiving reliable AI-powered feedback!</h2>
       </div>
 
 
