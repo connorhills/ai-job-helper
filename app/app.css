@@ -9,13 +9,13 @@
   --color-light-blue-100: #c1d3f81a;
   --color-light-blue-200: #a7bff14d;
 
-  --color-badge-green: #d5faf1;
-  --color-badge-red: #f9e3e2;
-  --color-badge-yellow: #fceed8;
+  --color-badge-green: #038c27;
+  --color-badge-red: #ae0404;
+  --color-badge-yellow: #aeab04;
 
-  --color-badge-green-text: #254d4a;
-  --color-badge-red-text: #752522;
-  --color-badge-yellow-text: #73321b;
+  --color-badge-green-text: #cdfeda;
+  --color-badge-red-text: #fecdcd;
+  --color-badge-yellow-text: #fefdcd;
 }
 
 html,
@@ -40,11 +40,11 @@ label {
 }
 
 input {
-  @apply w-full p-4 inset-shadow rounded-2xl outline-2 outline-[rgb(0,238,255)] focus:outline-none focus:input-glow bg-[#2f3f46] text-white;
+  @apply w-full p-4 inset-shadow rounded-2xl outline-2 outline-[#00eeff] focus:outline-none focus:input-glow bg-[#2f3f46] text-white;
 }
 
 textarea {
-  @apply w-full p-4 inset-shadow rounded-2xl outline-2 outline-[rgb(0,238,255)] focus:outline-none focus:input-glow bg-[#2f3f46] text-white;
+  @apply w-full p-4 inset-shadow rounded-2xl outline-2 outline-[#00eeff] focus:outline-none focus:input-glow bg-[#2f3f46] text-white;
 }
 
 form {
@@ -76,7 +76,7 @@ form {
     @apply flex flex-row items-center justify-center p-4 gap-4;
 
     .category {
-      @apply flex flex-row gap-2 items-center bg-gray-50 rounded-2xl p-4 w-full justify-between;
+      @apply flex flex-row gap-2 items-center bg-[#40494e] rounded-2xl p-4 w-full justify-between;
     }
   }
 
@@ -159,7 +159,7 @@ form {
 }
 
 @utility inset-shadow {
-  box-shadow: inset 0 0 16px 0 rgba(0,238,255, 0.3);
+  box-shadow: inset 0 0 16px 0 rgba(0, 238, 255, 0.3);
   backdrop-filter: blur(8px);
 }
 
@@ -168,7 +168,61 @@ form {
 }
 
 @utility input-glow {
-  box-shadow: 0 0 8px 4px #04f7ff80, 0 0 0 1px #04f7ff;
+  box-shadow: 0 0 8px 4px #04f7ff80, 0 0 0 4px #04f7ff;
+}
+
+@utility input-glow-2 {
+  box-shadow: 0 0 8px 4px #04f7ff80, 0 0 0 4px #00fd87;
+}
+
+@utility input-glow-3 {
+  box-shadow: 0 0 8px 4px #04f7ff80, 0 0 0 4px #0051ff;
+}
+
+@utility ats-glow-green {
+  box-shadow: 0 0 12px 6px #00eb8180, 0 0 0 2px #00eb81;
+}
+
+@utility ats-glow-yellow {
+  box-shadow: 0 0 12px 6px #fbbf2480, 0 0 0 2px #fbbf24;
+}
+
+@utility ats-glow-red {
+  box-shadow: 0 0 12px 6px #f8717180, 0 0 0 2px #f87171;
+}
+
+@utility resume-glow {
+  box-shadow: 0 0 20px 8px #0051ff40, 0 0 40px 16px #03ffc040, 0 0 0 2px #03ffc0;
+}
+
+.resume-glow-gradient {
+  position: relative;
+}
+
+.resume-glow-gradient::before {
+  content: '';
+  position: absolute;
+  top: -20px;
+  left: -20px;
+  right: -20px;
+  bottom: -20px;
+  background: linear-gradient(to bottom, #0051ff60, #03ffc060);
+  border-radius: 24px;
+  filter: blur(20px);
+  z-index: -1;
+}
+
+.resume-glow-gradient::after {
+  content: '';
+  position: absolute;
+  top: -10px;
+  left: -10px;
+  right: -10px;
+  bottom: -10px;
+  background: linear-gradient(to bottom, #0051ff30, #03ffc030);
+  border-radius: 20px;
+  filter: blur(10px);
+  z-index: -1;
 }
 
 @keyframes fadeIn {
