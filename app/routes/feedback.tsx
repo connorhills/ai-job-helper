@@ -19,7 +19,7 @@ const Feedback = () => {
     const navigate = useNavigate();
 
     useEffect(() => {
-        if (!isLoading && !auth.isAuthenticated) navigate(`/auth?next=/resume/${id}`);
+        if (!isLoading && !auth.isAuthenticated) navigate(`/auth?next=/feedback/${id}`);
     }, [isLoading])
 
     useEffect(() => {
