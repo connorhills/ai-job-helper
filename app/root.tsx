@@ -12,6 +12,29 @@ import "./app.css";
 import { usePuterStore } from "./lib/puter";
 import { useEffect } from "react";
 
+// Polyfill for Promise.withResolvers() for mobile compatibility
+declare global {
+  interface PromiseConstructor {
+    withResolvers?<T>(): {
+      promise: Promise<T>;
+      resolve: (value: T | PromiseLike<T>) => void;
+      reject: (reason?: any) => void;
+    };
+  }
+}
+
+if (typeof (Promise as any).withResolvers === 'undefined') {
+  (Promise as any).withResolvers = function <T>() {
+    let resolve: (value: T | PromiseLike<T>) => void;
+    let reject: (reason?: any) => void;
+    const promise = new Promise<T>((res, rej) => {
+      resolve = res;
+      reject = rej;
+    });
+    return { promise, resolve: resolve!, reject: reject! };
+  };
+}
+
 export const links: Route.LinksFunction = () => [
   { rel: "preconnect", href: "https://fonts.googleapis.com" },
   {
