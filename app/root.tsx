@@ -11,6 +11,7 @@ import type { Route } from "./+types/root";
 import "./app.css";
 import { usePuterStore } from "./lib/puter";
 import { useEffect } from "react";
+import { Analytics } from "@vercel/analytics/react"
 
 // Polyfill for Promise.withResolvers() for mobile compatibility
 declare global {
@@ -68,6 +69,7 @@ export function Layout({ children }: { children: React.ReactNode }) {
         {children}
         <ScrollRestoration />
         <Scripts />
+        <Analytics />
       </body>
     </html>
   );
